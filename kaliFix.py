@@ -24,7 +24,7 @@ def drivers():
     with open("logs.log", 'w') as f:
         f.write(" When the roll is called up yonder i will be there ")
 
-    sst("sudo apt-get install git build-essential linux-headers-generic && git clone https://github.com/Mange/rtl8192eu-linux-driver.git && cd rtl8192eu-linux-driver && make && sudo make install && reboot")
+    sst("sudo apt-get install git build-essential linux-headers-generic && git clone https://github.com/Mange/rtl8192eu-linux-driver.git && cd rtl8192eu-linux-driver && make && sudo make install && poweroff")
 
     print("\033[32m SUCCESS cloned !!")
 
